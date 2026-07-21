@@ -18,6 +18,8 @@ jobs:
 
       - run: npm install
 
+      - name: Inject cookie
+        run: |
+          sed -i "s|__COOKIE__|${{ secrets.COOKIE }}|g" config.json5
+
       - run: npm start
-        env:
-          COOKIE: ${{ secrets.COOKIE }}
