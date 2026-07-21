@@ -132,7 +132,7 @@
                 // Just add another object inside the data array
                 // Account #1
                 {
-                    cookie: '',
+                    cookie: "__COOKIE__",
                     redeemCode: false,
                     dailiesCheck: false,
                     weekliesCheck: false,
