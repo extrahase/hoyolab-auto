@@ -122,7 +122,7 @@
         },
         {
             id: 4,
-            active: false, // Set to true if you want to enable Honkai: Star Rail
+            active: true, // Set to true if you want to enable Honkai: Star Rail
             type: 'starrail',
             data: [
                 // If you have same account for both genshin and starrail
@@ -146,7 +146,7 @@
                         persistent: false,
                     },
                     mimo: {
-                        check: false,
+                        check: true,
                         redeem: true,
                         lottery: false,
                         reservePoints: 0,
@@ -168,35 +168,6 @@
                 },
                 // Account #2
                 // Delete this if you only have one account
-                {
-                    cookie: '',
-                    dailiesCheck: false,
-                    weekliesCheck: false,
-                    stamina: {
-                        check: false,
-                        threshold: 0,
-                        persistent: false,
-                    },
-                    expedition: {
-                        check: false,
-                        persistent: false,
-                    },
-                    mimo: {
-                        check: false,
-                        redeem: true,
-                        lottery: false,
-                        reservePoints: 0,
-                        redeemDraw: true,
-                    },
-                    discord: {
-                        // Your Discord user ID to ping you when to do your dailies/weeklies (will only work if discord bot / webhook is configured)
-                        // or when your stamina is above the threshold and your expedition is done
-                        // this is optional, you can leave it as null if you don't want to get pinged
-                        // Make sure your Discord user ID is between single quotes such as ''
-                        // e.g userId: '123456789'
-                        userId: null,
-                    }
-                },
             ],
         },
         {
