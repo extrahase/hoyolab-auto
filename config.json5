@@ -133,9 +133,9 @@
                 // Account #1
                 {
                     cookie: "__COOKIE__",
-                    redeemCode: false,
-                    dailiesCheck: false,
-                    weekliesCheck: false,
+                    redeemCode: true,
+                    dailiesCheck: true,
+                    weekliesCheck: true,
                     stamina: {
                         check: false,
                         threshold: 0,
@@ -148,8 +148,8 @@
                     mimo: {
                         check: true,
                         redeem: true,
-                        lottery: false,
-                        reservePoints: 0,
+                        lottery: true,
+                        reservePoints: 300,
                         redeemDraw: true,
                     },
                     discord: {
