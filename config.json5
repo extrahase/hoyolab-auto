@@ -2,7 +2,7 @@
     loglevel: 'info',
     userAgent: 'Custom fork of HoyoLabAuto: github.com/torikushiii/hoyolab-auto',
     retry: {
-        attempts: 3, // Number of retries for API calls (0 disables retries)
+        attempts: 10, // Number of retries for API calls (0 disables retries)
         delayMs: 1000, // Time between retries in milliseconds
         timeoutMs: 30000, // API timeout in milliseconds
     },
@@ -41,7 +41,7 @@
         codeRedeem: '*/15 * * * *',
         expedition: '0 */30 * * * *',
         mimo: '0 0 */1 * * *',
-        mimoJitter: 0, // Random delay in seconds before running Mimo (0-N). Helps avoid rate limits at reset time.
+        mimoJitter: 1, // Random delay in seconds before running Mimo (0-N). Helps avoid rate limits at reset time.
         hilichurl: '0 0 11 * * *', // 11:00 AM local time (adjust for your timezone if event resets at a different time)
         hilichurlJitter: 0, // Random delay in seconds before running Hilichurl Workshop (0-N).
         missedCheckIn: '0 0 23 * * *',
