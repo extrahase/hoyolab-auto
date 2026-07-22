@@ -1,9 +1,13 @@
-name: HoYoLab Daily
+name: HoYoLab
 
 on:
   schedule:
-    - cron: "5 4 * * *"
+    - cron: "5 */8 * * *"
   workflow_dispatch:
+
+concurrency:
+  group: hoyolab-auto
+  cancel-in-progress: false
 
 jobs:
   daily:
@@ -15,6 +19,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: npm
 
       - run: npm install
 
