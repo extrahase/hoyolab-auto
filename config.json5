@@ -40,7 +40,7 @@
         checkIn: '0 0 0 * * *',
         codeRedeem: '*/15 * * * *',
         expedition: '0 */30 * * * *',
-        mimo: '0 0 */6 * * *',
+        mimo: '0 0 0,19 * * *',
         mimoJitter: 1, // Random delay in seconds before running Mimo (0-N). Helps avoid rate limits at reset time.
         hilichurl: '0 0 11 * * *', // 11:00 AM local time (adjust for your timezone if event resets at a different time)
         hilichurlJitter: 0, // Random delay in seconds before running Hilichurl Workshop (0-N).
@@ -133,9 +133,9 @@
                 // Account #1
                 {
                     cookie: "__COOKIE__",
-                    redeemCode: true,
-                    dailiesCheck: true,
-                    weekliesCheck: true,
+                    redeemCode: false,
+                    dailiesCheck: false,
+                    weekliesCheck: false,
                     stamina: {
                         check: false,
                         threshold: 0,
@@ -149,7 +149,7 @@
                         check: true,
                         redeem: true,
                         lottery: true,
-                        reservePoints: 300,
+                        reservePoints: 0,
                         redeemDraw: true,
                     },
                     discord: {
