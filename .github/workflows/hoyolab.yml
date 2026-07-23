@@ -26,4 +26,7 @@ jobs:
       - name: Inject Cookie
         run: sed -i "s@__COOKIE__@${{ secrets.COOKIE }}@g" config.json5
 
+      - name: Set timezone
+        run: sudo timedatectl set-timezone Asia/Shanghai
+
       - run: npm start
